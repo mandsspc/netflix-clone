@@ -7,7 +7,7 @@ import Show from './show';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 // Fake Server 
-import { mockedServer } from './server/';
+import { mockedServer } from './server';
 
 mockedServer();
 
