@@ -6,7 +6,7 @@ import Movie from './movie';
 import Show from './show';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-// Fake Server
+// Fake Server 
 import { mockedServer } from './server/';
 
 mockedServer();

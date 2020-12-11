@@ -75,13 +75,6 @@ getShows = async () => {
               >
                Inicio
               </ItemList>
-              {/* <ItemList
-                to={{
-                  pathname: '/'
-                }}
-              >
-                Minha Lista
-              </ItemList> */}
               <ItemList
               to={{
                 pathname: '/movie'
@@ -105,9 +98,6 @@ getShows = async () => {
                 <div className="box-item-movie-and-shows">
                   <img className="netflixImages" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}/>
                     <p className="description-movie-and-shows">{item.overview}</p>
-                    {/* <div className="box-button">
-                      <button className="button-adc">+</button>
-                    </div> */}
                 </div>
                 <p className="date-movie-and-shows">{item.release_date}</p>
               </div>
@@ -120,9 +110,6 @@ getShows = async () => {
                 <div className="box-item-movie-and-shows">
                 <img className="netflixImages" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}/> 
                     <p className="description-movie-and-shows">{item.overview}</p>
-                   {/*  <div className="box-button">
-                      <button className="button-adc">+</button>
-                    </div> */}
                 </div>
                 <p className="date-movie-and-shows">{item.popularity}</p>
               </div>   
