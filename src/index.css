@@ -11,8 +11,13 @@ body {
 .box-init {
   display: flex;  
   background-color: red;
-  padding: 2rem;
+  padding: 1rem;
 }
+@media(max-width:425px){
+  .box-init {
+    padding: 3px;
+  }
+}  
 
 .logo {
   width: 150px;
@@ -21,6 +26,20 @@ body {
   border: 1px solid #E1E4E7;
   border-radius: 40%;
 }
+  @media(max-width:768px){
+    .logo {
+      width: 120px;
+      height: 40px;
+    }
+  }   
+  @media(max-width:425px){
+    .logo {
+      width: 60px;
+      height: 20px;
+      margin-top: 3px;
+      margin-left: 7px;
+    }
+  }   
 
 .box-movie-and-shows {
   display: flex;
@@ -30,49 +49,127 @@ body {
 
 .box-title-movie-and-shows {
   position: relative;
-  background-color: whitesmoke;
+  background-color: black;
+  border: 7px double red;
   width: 60%;
-  height: 80vh;
+  padding: 5px;
   margin-top: 2rem;
   margin-left: 2rem;
   border-radius: 5%;
   display: flex;
   flex-direction: column;
 }
+  @media(max-width:1024px){
+    .box-title-movie-and-shows {
+      width: 81%;
+      margin-left: 2px;
+    }
+  }   
 
 .title-movie-and-shows {
-  color: rgb(0, 0, 0);
+  color: #fff;
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 35px;
   text-align: center;
-  margin-top: 2rem;
   align-items: center;
 }
+  @media(max-width:768px){
+    .title-movie-and-shows {
+      font-size: 25px;
+    }
+  }   
 
 .box-item-movie-and-shows {
   display: flex;
   margin-top: 1rem;
 }
+  @media(max-width:1024px){
+    .box-item-movie-and-shows {
+      margin-left: 2rem;
+    }
+  }  
+  @media(max-width:768px){
+    .box-item-movie-and-shows {
+      margin-left: 10px;
+    }
+  }  
+  @media(max-width:425px){
+    .box-item-movie-and-shows {
+      display: flex;
+      flex-direction: column;
+      margin-top: 6px;
+      margin-left: 0;
+      align-items: center;
+    }
+  }   
 
 .netflixImages {
   width: 35%;
   margin-left: 2rem;
 }
+  @media(max-width:1024px){
+    .netflixImages {
+      width: 26%;
+    }
+  }  
+  @media(max-width:425px){
+    .netflixImages {
+      width: 42%;
+      margin-left: 0;
+    }
+  }   
 
 .description-movie-and-shows {
   width: 55%;
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   margin-left: 1rem;
   display: flex;
   align-items: center;
 }
+  @media(max-width:1024px){
+    .description-movie-and-shows {
+      width: 60%;
+    }
+  }  
+  @media(max-width:768px){
+    .description-movie-and-shows {
+      width: 58%;
+      font-size: 12px;
+    }
+  }   
+  @media(max-width:425px){
+    .description-movie-and-shows {
+      width: 96%;
+      margin-left: 0;
+      font-size: 8px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }    
 
 .date-movie-and-shows {
   margin-left: 8rem;
+  color: #ffffff;
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
 }
+  @media(max-width:768px){
+    .date-movie-and-shows {
+      font-size: 12px;
+      margin-left: 6rem;
+      margin-top: 5px;
+    }
+  }  
+  @media(max-width:425px){
+    .date-movie-and-shows {
+      margin-top: 5px;
+      font-size: 10px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }   
 
 .box-shows {
   display: flex;

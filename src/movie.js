@@ -11,6 +11,15 @@ const List = styled.ul `
   justify-content: space-between;
   margin-left: 14rem;
   margin-top: 10px;
+
+  @media (max-width: 1024px) {
+    margin-left: 9rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 6rem;
+    margin-top: 5px;
+  }
 `;
 
 const ItemList = styled(NavLink) `

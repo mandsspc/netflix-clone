@@ -12,6 +12,21 @@ const List = styled.ul `
   justify-content: space-between;
   margin-left: 14rem;
   margin-top: 10px;
+
+  @media (max-width: 1024px) {
+    margin-left: 9rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 6rem;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 425px) {
+    width: 56%; 
+    margin-left: 2rem;
+    margin-top: 2px;
+  }
 `;
 
 const ItemList = styled(NavLink) `
@@ -22,6 +37,10 @@ const ItemList = styled(NavLink) `
   text-decoration: none;
   list-style: none;
   cursor: pointer;
+
+  @media (max-width: 425px) {
+    font-size: 15px;
+  }
 `;
 
 class App extends Component {
